@@ -1,0 +1,70 @@
+aconvnet
+5 0.5694
+10 0.7422
+20 0.8453
+30 0.9055
+40 0.9096
+50  0.9435
+
+5    A_convNet: 0.569484536057895   Adaboost RF: 0.5756701030927835
+10   A_convNet: 0.742268041089638   Adaboost RF: 0.7665979381443299
+20   A_convNet: 0.8453608245210549  Adaboost RF: 0.8445360824742268
+30   A_convNet: 0.9055670104321746  Adaboost RF: 0.9331958762886597
+40   A_convNet: 0.9096907214282715  Adaboost RF: 0.937319587628866
+50   A_convNet: 0.9435051544179621  Adaboost RF: 0.9567010309278351
+
+
+
+5   0.5888659792708367  CNN: 0.4371134020925797
+10  0.7624742270990745  CNN: 0.7521649485765044
+20  0.863092783234783   CNN: 0.8296907217723807
+30  0.8969072166177415  CNN: 0.9096907214282715
+40  0.9068041234901271  CNN: 0.9257731958271301
+50  0.9385567008097148  CNN: 0.939793814211776
+
+CNN: [1.470594766754465, 0.45072164944766724]
+CNN: [0.9018703491663196, 0.6672164950911532]
+CNN: [0.8618521569930401, 0.7999999997296284]
+CNN: [0.3495506362816722, 0.9055670100880653]
+CNN: [0.32115351950692145, 0.9212371131808488]
+CNN: [0.22691043745055683, 0.9447422682132918]
+
+
+
+5 samples/one_category test_acc: Our_cnn: 0.3476288659793814 Rotation Forest: 0.47216494845360824 Adaboost RF: 0.5579381443298969
+5 samples/layer4 test_acc: Rotation Forest: 0.4465979381443299 Adaboost RF: 0.49237113402061855
+5 samples/layer5 test_acc: Rotation Forest: 0.4350515463917526 Adaboost RF: 0.4688659793814433
+5 samples/layer6 test_acc: Rotation Forest: 0.4643298969072165 Adaboost RF: 0.5014432989690721
+5 samples/layer7 test_acc: Rotation Forest: 0.43876288659793816 Adaboost RF: 0.46845360824742266
+
+10 samples/one_category test_acc: Our_cnn: 0.7694845359349988 Rotation Forest: 0.7455670103092783 Adaboost RF: 0.774020618556701
+10 samples/layer4 test_acc: Rotation Forest: 0.591340206185567 Adaboost RF: 0.6008247422680413
+10 samples/layer5 test_acc: Rotation Forest: 0.6552577319587629 Adaboost RF: 0.6952577319587628
+10 samples/layer6 test_acc: Rotation Forest: 0.7385567010309279 Adaboost RF: 0.7558762886597938
+10 samples/layer7 test_acc: Rotation Forest: 0.76 Adaboost RF: 0.7678350515463918
+
+20 samples/one_category test_acc: Our_cnn: 0.8573195873584943 Rotation Forest: 0.845360824742268 Adaboost RF: 0.8564948453608248
+20 samples/layer4 test_acc: Rotation Forest: 0.6701030927835051 Adaboost RF: 0.734020618556701
+20 samples/layer5 test_acc: Rotation Forest: 0.7517525773195877 Adaboost RF: 0.7909278350515464
+20 samples/layer6 test_acc: Rotation Forest: 0.8156701030927835 Adaboost RF: 0.8465979381443299
+20 samples/layer7 test_acc: Rotation Forest: 0.8478350515463917 Adaboost RF: 0.8461855670103092
+
+30 samples/one_category test_acc: Our_cnn: 0.9191752576828003 Rotation Forest: 0.9150515463917526 Adaboost RF: 0.9212371134020618
+30 samples/layer4 test_acc: Rotation Forest: 0.7348453608247423 Adaboost RF: 0.7925773195876289
+30 samples/layer5 test_acc: Rotation Forest: 0.8177319587628866 Adaboost RF: 0.8548453608247423
+30 samples/layer6 test_acc: Rotation Forest: 0.8981443298969072 Adaboost RF: 0.9035051546391752
+30 samples/layer7 test_acc: Rotation Forest: 0.9092783505154639 Adaboost RF: 0.9212371134020618
+
+40 samples/one_category test_acc: Our_cnn: 0.9567010307066219 Rotation Forest: 0.948041237113402 Adaboost RF: 0.9571134020618557
+40 samples/layer4 test_acc: Rotation Forest: 0.7719587628865979 Adaboost RF: 0.8164948453608247
+40 samples/layer5 test_acc: Rotation Forest: 0.8268041237113402 Adaboost RF: 0.8952577319587629
+40 samples/layer6 test_acc: Rotation Forest: 0.9360824742268041 Adaboost RF: 0.9455670103092784
+40 samples/layer7 test_acc: Rotation Forest: 0.9558762886597938 Adaboost RF: 0.9550515463917526
+
+50 samples/one_category test_acc: Our_cnn: 0.9612371131808487 Rotation Forest: 0.9587628865979382 Adaboost RF: 0.9616494845360825
+50 samples/layer4 test_acc: Rotation Forest: 0.7665979381443299 Adaboost RF: 0.8169072164948453
+50 samples/layer5 test_acc: Rotation Forest: 0.8643298969072165 Adaboost RF: 0.9162886597938145
+50 samples/layer6 test_acc: Rotation Forest: 0.928659793814433 Adaboost R F: 0.9468041237113402
+50 samples/layer7 test_acc: Rotation Forest: 0.9583505154639175 Adaboost RF: 0.9595876288659794
+
+
