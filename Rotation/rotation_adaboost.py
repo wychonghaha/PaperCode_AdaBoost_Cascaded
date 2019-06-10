@@ -10,6 +10,7 @@ from sklearn.utils import check_array, check_X_y, check_random_state
 from sklearn.utils.validation import check_is_fitted
 
 from Rotation.misc_functions import get_partition, get_bootstrapping
+__author__ = 'anton-goy'
 
 MAX_INT = np.iinfo(np.int32).max
 

@@ -1,6 +1,7 @@
 import numpy as np
 
 from sklearn.cross_validation import KFold
+__author__ = 'anton-goy'
 
 
 def get_partition(n_features, max_features_in_subset, random_state):

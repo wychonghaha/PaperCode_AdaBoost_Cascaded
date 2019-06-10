@@ -9,7 +9,6 @@ from Rotation import rotation_adaboost
 def all_model(fx_train,fx_test,y_train,y_test):
 
     result=[]
-    # 旋转森林
     classifier = rotation_forest.RotationForestClassifier(n_features_per_subset=10)
     classifier.fit(fx_train, y_train)
     y_pred2 = classifier.predict(fx_test)
@@ -21,7 +20,6 @@ def all_model(fx_train,fx_test,y_train,y_test):
     y_pred6 = adaherf.predict(fx_test)
     pre8=np.mean(np.equal(y_pred6,y_test))
     result.append(pre8)
-    # 随机森林
     classifier = RandomForestClassifier(n_estimators = 40 )
     classifier.fit(fx_train, y_train)
     y_pred1 = classifier.predict(fx_test)

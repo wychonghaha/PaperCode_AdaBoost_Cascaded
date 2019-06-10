@@ -13,14 +13,14 @@ from sklearn import preprocessing
 from sklearn.decomposition import PCA
 
 
-mode='other_test' #测试还是训练 train 训练网络 test 测试网络 other_test 其他为测试网络及机器学习模型
-test_numbers=10 #一共测多少次取平均值
-part_or_all='part' #样本数 all 为取全部样本 其他需要改 total 参数
-total=5#取样本数
-suiji=False #是随机取还是隔一定角度取
+mode='other_test' #test train or others
+test_numbers=10#the times of test
+part_or_all='part' #all or part
+total=5# the samples of training  
+suiji=False  #mode name
 input_shape = (128, 128, 1)
 
-num_classes =10  #类别数
+num_classes =10   
 img_size = (128, 128)
 epochs =100
 batch_size =16
@@ -72,7 +72,6 @@ for i in datasets:
         y_train1=np.argmax(y_train,axis=1)
         y_test1=np.argmax(y_test,axis=1)
         for i in range(test_numbers):
-            #第4层
             dense1_layer_model =Model(inputs=model.input,outputs=model.get_layer('layer3').output)  
             fx_test3 = dense1_layer_model.predict(x_test)
             fx_train3 = dense1_layer_model.predict(x_train)
@@ -84,7 +83,6 @@ for i in datasets:
             fx_te3=pca.transform(fx_test3)
             result=all_model(fx_tr3,fx_te3,y_train1,y_test1)
             result_total4.append(result)
-            #第5层
             dense1_layer_model =Model(inputs=model.input,outputs=model.get_layer('layer4').output)  
             fx_test4 = dense1_layer_model.predict(x_test)
             fx_train4 = dense1_layer_model.predict(x_train)
@@ -96,13 +94,11 @@ for i in datasets:
             fx_te4=pca.transform(fx_test4)      
             result=all_model(fx_tr4,fx_te4,y_train1,y_test1)
             result_total5.append(result)
-            #第6层
             dense1_layer_model =Model(inputs=model.input,outputs=model.get_layer('dense1_out').output)  
             fx_test_dence1 = dense1_layer_model.predict(x_test)
             fx_train_dence1 = dense1_layer_model.predict(x_train)
             result=all_model(fx_train_dence1,fx_test_dence1,y_train1,y_test1)
             result_total6.append(result)
-            #第7层
             dense1_layer_model_2 =Model(inputs=model.input,outputs=model.get_layer('soft_out').output)  
             fx_test_out = dense1_layer_model_2.predict(x_test)
             fx_train_out = dense1_layer_model_2.predict(x_train)

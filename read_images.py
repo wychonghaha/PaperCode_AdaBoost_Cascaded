@@ -17,7 +17,6 @@ def get_alldata(num_classes,img_size):
     if os.path.exists('tmp_data/all_data/y_test.npy'):
         y_test=np.load('tmp_data/all_data/y_test.npy')
         index=index+1
-    #若是没有生成数据，则从文件中读取
     if index!=4:
         test = utils.load_img('datasets/class10/test', num_classes=num_classes,resize=img_size)
         train = utils.load_img('datasets/class10/train', type1='train',num_classes=num_classes,resize=img_size)

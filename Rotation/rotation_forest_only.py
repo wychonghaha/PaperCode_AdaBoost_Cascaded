@@ -19,7 +19,6 @@ from joblib import Parallel, delayed
 from Rotation.misc_functions import get_partition, get_bootstrapping
 __author__ = 'anton-goy'
 
-
 MAX_INT = np.iinfo(np.int32).max
 
 
