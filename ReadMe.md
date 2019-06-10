@@ -1,5 +1,5 @@
 `the dataset:`</br>
-Just put the data into the floder of 'datasets/class10/test' and 'datasets/class10/train',then the classes as:</br> 
+Just put the data into the folder of 'datasets/class10/test' and 'datasets/class10/train',then the classes as:</br> 
 1_new Az_2S1</br> 
 2_new BMP2</br> 
 3_new BRDM_2</br> 
