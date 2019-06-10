@@ -12,21 +12,24 @@ Just put the data into the floder of 'datasets/class10/test' and 'datasets/class
 10_new ZSU_23_4</br> 
 
 `the models: `</br>
-models.py <font color="green">#our CNN models</font></br> 
-othermodels_all.py <font color="green">#the method we used to compare the acc classified by the features extracted by CNN</font></br> 
-othermodels.py <font color="green">#the method we used</font></br> 
-A_ConvNets.py <font color="green">#the model of A_convnet</font></br> 
-models_concate.py <font color="green"># Concatenate different layers by cnn</font></br> 
-
+```python
+models.py #our CNN models
+othermodels_all.py #the method we used to compare the acc classified by the features extracted by CNN
+othermodels.py #the method we used
+A_ConvNets.py #the model of A_convnet
+models_concate.py # Concatenate different layers by cnn
+```
 `the training: `</br>
-ours_method.py <font color="green">#our method</font></br> 
-ours_method_onelayer.py <font color="green">#try different layer by our method</font></br> 
-Aconvnet_compare.py <font color="green">#Aconvnet method</font></br> 
-all_method.py <font color="green">#try other ensemble method</font></br> 
-
+```python
+ours_method.py #our method
+ours_method_onelayer.py #try different layer by our method
+Aconvnet_compare.py #Aconvnet method
+all_method.py #try other ensemble method
+```
 `the testing: `</br>
-test1.py <font color="green">#used all_method model</font></br> 
-test2.py <font color="green">#uesd ours_method_onelayer model</font></br> 
-test3.py <font color="green">#used models_concate model</font></br> 
-test4.py <font color="green">#used ours_method model</font></br> 
-
+```python
+test1.py #used all_method model
+test2.py #uesd ours_method_onelayer model
+test3.py #used models_concate model
+test4.py #used ours_method model
+```
